@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html><html><head><style type="text/css">canvas{position:absolute;top:0;left:0}</style><script>if (!Object.entries) {
+           Object.entries = function( obj ){
+              var ownProps = Object.keys( obj ),
+                 i = ownProps.length,
+                 resArray = new Array(i); // preallocate the Array
+
+              while (i--)
+                 resArray[i] = [ownProps[i], obj[ownProps[i]]];
+              return resArray;
+           }
+       }
+        if (!Object.values) {
+            Object.values = function(obj) {
+                var values = [];
+                for (var attr in obj) if (obj.hasOwnProperty(attr))
+                    values.push(obj[attr]);
+                return values;
+            }
+        }</script><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width"><title>Gin Rummy - Play Online Unblocked - Unblocked Games 911</title><meta name="description" content="Play Gin Rummy card game for free in your desktop or mobile browser."><meta name="keywords" content="gin rummy, gin rummy game, gin rummy card game, play gin rummy"><link rel="canonical" href="https://www.gin-rummy-online.com"><script type="text/javascript" async="true">(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.inmobi.com'
+    .concat('/choice/', 'E2FD42ekzC6Vt', '/', host, '/choice.js?tag_version=V3');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = Object.assign(args[3], { tag_version: 'V3' });
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();</script><script>function displayPrivacySettings() {
+        $('ion-toolbar ion-buttons button').click();
+        window.__tcfapi('displayConsentUi', 2, function() {} );    
+    }        
+
+    __tcfapi('addEventListener', 2, function( tcData, success ) {
+        if (tcData.gdprApplies) {
+            var scripts = document.getElementsByTagName('script');
+            var script  = scripts[scripts.length - 1];
+            var style = document.createElement('style');
+            script.parentElement.insertBefore(style, script);
+            style.innerText = '#displayPrivacySettings {display: block!important;}';
+        }    
+
+        if (success && (tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete')) {
+            var hasConsentDeviceStorage = !tcData.gdprApplies || (tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[1]);
+            var hasConsentDevelopAndImproveProducts = !tcData.gdprApplies || (tcData.purpose && tcData.purpose.consents && tcData.purpose.consents[10]);
+
+            if (hasConsentDeviceStorage && hasConsentDevelopAndImproveProducts) {
+                // Sentry
+                var script = document.createElement('script');
+                var scripts = document.getElementsByTagName('script');
+                var lastScript = scripts[scripts.length - 1];
+            
+                script.src = "https://browser.sentry-cdn.com/6.2.2/bundle.tracing.min.js"
+                script.integrity = "sha384-6nyTKv8WQWCjiZcGvMp9ienPyVwBBfPhJk3/aiESxhtkGc0XtP6ZcB+vafBNfxTD"
+                script.setAttribute("crossorigin", "anonymous");
+            
+                script.onload = function() {
+                    Sentry.init({
+                    dsn: "https://87a2b2e873db429d84ee7327c3e77b94@o530083.ingest.sentry.io/5885821",
+                    integrations: [new Sentry.Integrations.BrowserTracing()],
+                    allowUrls: ["gin-rummy-online.com/index.html", "gin-rummy-online.com/service-worker.js", "gin-rummy-online.com/game/"],              
+                    sampleRate: 0.1,
+                    tracesSampleRate: 0,
+                    ignoreErrors: [
+                        "execute code from a freed script",
+                        "Object expected",
+                        "Unable to get property 'sqrt' of undefined or null reference",
+                        "Blocked a restricted frame with origin"
+                        ]
+                    });
+                }
+            
+                lastScript.parentElement.insertBefore(script, lastScript);
+                // End Sentry
+            }
+        }
+    });</script><script>window['gtag_enable_tcf_support'] = true;</script><script async src="/patch/js/null.js?https://www.googletagmanager.com/gtag/js?id=G-ZNCQ4VBDRM"></script><script async data-ad-client="ca-pub-5240746718396645" src="patch/js/null.js?pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>window.adsbygoogle = window.adsbygoogle || [];
+  var adBreak = adConfig = function(o) {adsbygoogle.push(o);}</script><script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZNCQ4VBDRM');</script><script>(function() {
+        if (navigator.serviceWorker && navigator.serviceWorker.register) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    }());</script><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#22903B"><link rel="stylesheet" href="game/css/style.css" type="text/css"><link href="game/build/main.css" rel="stylesheet"><link rel="icon" type="image/ico" href="game/favicon.ico"></head><body style="overflow:hidden;"><script>// Load GPT asynchronously
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+        '//securepubads.g.doubleclick.net/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();</script><script>// GPT slots
+  var gptAdSlots = [];
+
+  var refreshgoogletag = function() {
+     
+     try {
+       googletag.destroySlots();
+     } catch (e) {         
+     }      
+                  
+     googletag.cmd.push(function() {
+
+       // This mapping will only display ads when user is on desktop sized viewport
+       var mapping1 = googletag.sizeMapping()
+       .addSize([700, 200], [160, 600])      
+       .addSize([0, 0], [])
+       // Desktop
+       .build();
+
+       // Define the first slot
+       gptAdSlots[0] = googletag.defineSlot('/21888287300/gin-rummy-online',[160, 600],'adarea').
+           setTargeting('test', 'refresh').
+           addService(googletag.pubads()).
+           defineSizeMapping(mapping1);
+
+       // Configure SRA
+       googletag.pubads().enableSingleRequest();
+
+       // Start ad fetching
+       googletag.enableServices();
+
+       googletag.display('adarea');
+
+     });
+  };
+  
+  refreshgoogletag();
+
+  window.addEventListener('refresh-ad', function() {
+      setTimeout(function () {
+          refreshgoogletag();
+      }, 3000);
+  });</script><style type="text/css">.adslot_1{z-index:100000}.adslot_1{display:inline-block;width:170px;height:100%;position:absolute;left:10px;top:10px}.adslot_1 *{visibility:visible!important}.adslot_1>div{height:100%!important}@media (max-width:679px){.adslot_1{display:none}}</style><div class="adslot_1" id="adarea"></div><div class="splash"><div class="splash--logo"><div class="splash--preload-bar"><div class="splash--progress"></div></div></div></div><div class="app-wrapper"><ion-app></ion-app><div class="preloader"><div>Loading</div><span>&hearts;</span> <span>&clubs;</span> <span>&diams;</span> <span>&spades;</span></div></div><script src="game/js/helpers.js"></script><script src="game/js/lib/soundjs.min.js"></script><script src="game/js/lib/jquery.js"></script><script src="game/js/game.js"></script></body></html>
